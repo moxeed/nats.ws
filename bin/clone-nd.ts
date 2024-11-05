@@ -66,7 +66,7 @@ const git = Deno.run({
     "git",
     "clone",
     `--branch=${m[2]}`,
-    "https://github.com/nats-io/nats.deno.git",
+    "https://github.com/moxeed/nats.deno.git",
   ],
 });
 
