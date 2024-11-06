@@ -108,10 +108,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:nats-io/nats.ws.git"
-  },
-  "bugs": {
-    "url": "https://github.com/nats-io/nats.ws/issues"
+    "url": "git@github.com:moxeed/nats.ws.git"
   },
   "keywords": [
     "NATS",
