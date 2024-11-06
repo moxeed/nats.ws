@@ -51,7 +51,7 @@ await Deno.lstat(dir)
 const data = await Deno.readFile(lib);
 const txt = new TextDecoder().decode(data);
 const m = txt.match(
-  /(export \* from\s+"https:\/\/raw.githubusercontent.com\/nats-io\/nats.deno\/(\S+)\/nats-base-client\/internal_mod.ts")/m,
+  /(export \* from\s+"https:\/\/raw.githubusercontent.com\/moxeed\/nats.deno\/(\S+)\/nats-base-client\/internal_mod.ts")/m,
 );
 if (!m) {
   console.error(`nats-base-client import not found in ${lib}`);

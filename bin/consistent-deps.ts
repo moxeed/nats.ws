@@ -26,7 +26,7 @@ async function getInternalReferences(fn: string): Promise<string[]> {
   const data = await Deno.readFile(fn);
   const txt = new TextDecoder().decode(data);
   const matches = txt.matchAll(
-    /("https:\/\/raw.githubusercontent.com\/nats-io\/nats.deno\/(\S+)\/nats-base-client\/internal_mod.ts")/g,
+    /("https:\/\/raw.githubusercontent.com\/moxeed\/nats.deno\/(\S+)\/nats-base-client\/internal_mod.ts")/g,
   );
   for (const m of matches) {
     found.push(m[0]);
@@ -56,7 +56,7 @@ async function check(dir: string) {
     const data = await Deno.readFile(fn);
     const txt = new TextDecoder().decode(data);
     const matches = txt.matchAll(
-      /("https:\/\/raw.githubusercontent.com\/nats-io\/nats.deno\/(\S+)\/nats-base-client\/internal_mod.ts")/g,
+      /("https:\/\/raw.githubusercontent.com\/moxeed\/nats.deno\/(\S+)\/nats-base-client\/internal_mod.ts")/g,
     );
     const lines = await getInternalReferences(fn);
     if (lines.length > 0) {
