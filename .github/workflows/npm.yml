@@ -1,6 +1,7 @@
 name: NATS.ws NPM release
 
 on:
+  workflow_dispatch:
   release:
     types: [created]
 
