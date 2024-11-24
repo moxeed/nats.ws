@@ -32,7 +32,7 @@ import {
   render,
 } from "https://raw.githubusercontent.com/moxeed/nats.deno/v1.28.2/nats-base-client/internal_mod.ts";
 
-const VERSION = "1.30.2";
+const VERSION = "1.30.3";
 const LANG = "nats.ws";
 
 export type WsSocketFactory = (u: string, opts: ConnectionOptions) => Promise<{
